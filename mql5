@@ -1,0 +1,66 @@
+
+//+------------------------------------------------------------------+
+//|                                           Di Napoli Thrust Scanner Dashboard MT4 |
+//|                                      https://www.forexroboteasy.com |
+//|                                                       Forex Robot Easy Team |
+//+------------------------------------------------------------------+
+
+// Define input parameters
+input int BarsAboveDMA = 3; // Number of bars above DMA for defining a thrust
+input int BarsBelowDMA = 3; // Number of bars below DMA for defining a thrust
+
+//+------------------------------------------------------------------+
+//|                                                                  |
+//|                                                                  |
+//|                                                                  |
+//|                                                                  |
+//|                      MAIN PROGRAM CODE                            |
+//|                                                                  |
+//|                                                                  |
+//|                                                                  |
+//|                                                                  |
+//+------------------------------------------------------------------+
+void OnStart()
+{
+    // Scan for Dinapoli thrust patterns across multiple timeframes
+    ScanForDinapoliThrustPatterns();
+    
+    // Customize the number of bars above or below the DMA for defining a thrust
+    CustomizeThrustBars();
+    
+    // Display the results on the Dashboard
+    DisplayResults();
+    
+    // Save user-defined customization preferences
+    SaveCustomizationPreferences();
+}
+
+// Function to scan for Dinapoli thrust patterns across multiple timeframes
+void ScanForDinapoliThrustPatterns()
+{
+    // Implement scanning algorithm here
+    // Analyze markets on different timeframes
+    // Detect Dinapoli thrust patterns based on predefined criteria
+    // Ensure scanning capability for all markets
+}
+
+// Function to customize the number of bars above or below the DMA for defining a thrust
+void CustomizeThrustBars()
+{
+    // Provide an interface for users to input the number of bars
+    // Update global variables BarsAboveDMA and BarsBelowDMA
+}
+
+// Function to display the results on the Dashboard
+void DisplayResults()
+{
+    // Implement code to display the results on the Dashboard
+    // Use appropriate graphical objects, labels, and indicators
+}
+
+// Function to save user-defined customization preferences
+void SaveCustomizationPreferences()
+{
+    // Implement code to save user-defined customization preferences
+    // Store the values of BarsAboveDMA and BarsBelowDMA in a file or database
+}
